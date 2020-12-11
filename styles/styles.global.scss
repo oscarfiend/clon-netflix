@@ -1,0 +1,28 @@
+$negro: #141414;
+$gris: #323232;
+$gris2:#8c8c8c;
+$girs3:#454545;
+$blanco:#FFFFFF;
+$primario:#e50914;
+$secundaio:#E87c03;
+
+*,html,body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    color:$gris2;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+img{
+    width: 100%;
+}
+

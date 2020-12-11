@@ -1,0 +1,190 @@
+$negro: #141414;
+$gris: #323232;
+$gris2:#8c8c8c;
+$girs3:#454545;
+$blanco:#FFFFFF;
+$primario:#e50914;
+$secundaio:#E87c03;
+
+
+.contenedor{
+    background-color: #141414;
+    min-width: 100%;
+    min-height: 100%;
+   
+}
+
+
+@media screen and(min-width:768px){
+    .contenedor{
+        background-color: unset;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),url('/assets/img/NetflixBackground.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center; 
+    }
+}
+
+.contenido{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+}
+
+.main{
+    width: 100%;
+    margin: 0 auto;
+    background-color: $negro;
+    display: flex;
+    flex-direction: column;
+    padding:0px 30px;
+    
+}
+
+@media screen and (min-width:768px){
+    .main{
+        width:450px;
+        background-color: rgba(0,0,0,.75);
+        padding: 60px 68px 40px;
+    }
+}
+
+.main legend{
+    font-size: 32px;
+    color:white;
+    font-weight: 700;
+    margin-bottom: 28px;
+    margin-top: 10px;
+}
+
+.campo input{
+    appearance: none;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    height: 3.2rem;
+    background-color: $gris;
+    border: none;
+    z-index: 2;
+    color:$blanco;
+    font-size: 1rem;
+    padding:0px 15px;
+    margin-bottom: 20px;
+}
+
+.campo label{
+    color: $gris2;
+    position: relative;
+    top:-35px; left: 20px;
+    z-index: 1;
+    
+}
+
+.campo .submit{
+    background-color:$primario;
+    color:$blanco;
+    font-weight: 700;
+    margin-top: 35px;
+}
+
+.acciones{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+.acciones label{
+    color:$gris2;
+
+}
+
+.enlaces{
+    display: flex;
+    flex-direction: column;
+}
+
+.enlaces>a{
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+
+
+.enlaces img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.subscribe{
+    display: flex;
+}
+.subscribe a{
+    color: white;
+}
+
+.subscribe span{
+    color:$gris2;
+    margin-right: 5px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: rgba(0,0,0,.75);
+    color: $gris2;
+    padding:0 100px;
+    border-top: 1px solid $gris2;
+}
+
+footer p{
+    margin: 20px 0;
+    
+}
+
+footer nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer nav a{
+    flex:0 0 50%;
+    padding:10px 0;
+
+}
+
+@media screen and (min-width:480px){
+    footer nav a{
+    flex: 0 0 33%;
+    }
+}
+
+@media screen and (min-width:768px){
+    footer nav a{
+    flex: 0 0 25%;
+    }
+
+    footer{
+        border:none;
+    }
+}
+
+select{
+    display: inline-block;
+    max-width: 120px;
+    margin: 10px 0 50px 0;
+    padding:15px;
+    background-color: transparent;
+    border: 1.5px solid $gris2;
+    color: $gris2;
+    border-radius: 3px;
+}
