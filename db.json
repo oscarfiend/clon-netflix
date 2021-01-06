@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "oscarfiend"
+    },
+    {
+      "id": 2,
+      "title": "react js",
+      "author": "monicamaria"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "oscarfiend",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "username": "monicamaria",
+      "password": "123456"
+    },
+    {
+      "name": "Nelly gutierrez",
+      "age": 69,
+      "id": "0000999"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

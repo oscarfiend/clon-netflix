@@ -1,0 +1,212 @@
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #8c8c8c;
+  padding: 0 100px;
+  border-top: 1px solid #8c8c8c;
+}
+
+footer p {
+  margin: 20px 0;
+}
+
+footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer nav a {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 10px 0;
+}
+
+@media screen and (min-width: 480px) {
+  footer nav a {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33%;
+            flex: 0 0 33%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer nav a {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
+  footer {
+    border: none;
+  }
+}
+
+select {
+  display: inline-block;
+  max-width: 120px;
+  margin: 10px 0 50px 0;
+  padding: 15px;
+  background-color: transparent;
+  border: 1.5px solid #8c8c8c;
+  color: #8c8c8c;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor {
+    background-color: unset;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/assets/img/NetflixBackground.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/NetflixBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+  }
+}
+
+.contenedor {
+  background-color: #141414;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.contenido {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.main {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #141414;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 60px 68px 40px;
+  }
+}
+
+.main legend {
+  font-size: 32px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 28px;
+  margin-top: 10px;
+}
+
+.campo input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  height: 3.2rem;
+  background-color: #323232;
+  border: none;
+  z-index: 2;
+  color: #FFFFFF;
+  font-size: 1rem;
+  padding: 0px 15px;
+  margin-bottom: 20px;
+}
+
+.campo label {
+  color: #8c8c8c;
+  position: relative;
+  top: -35px;
+  left: 20px;
+  z-index: 1;
+}
+
+.campo .submit {
+  background-color: #e50914;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin-top: 35px;
+}
+
+.campo .submit:hover {
+  cursor: pointer;
+}
+
+.acciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.acciones label {
+  color: #8c8c8c;
+}
+
+.enlaces {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.enlaces > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.enlaces img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subscribe a {
+  color: white;
+}
+
+.subscribe span {
+  color: #8c8c8c;
+  margin-right: 5px;
+}
+/*# sourceMappingURL=login.css.map */

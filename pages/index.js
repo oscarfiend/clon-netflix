@@ -1,19 +1,23 @@
-import Head from 'next/head'
+import React from "react";
+import Footer from "../components/login/Footer";
+import FormLogin from "../components/login/FormLogin";
+import css from "../styles/login.scss";
 
-
-export default function Home() {
+const login = () => {
   return (
-    <div>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-       <h1>Inicio</h1>
-      </main>
-
+    <div className={css.contenedor}>
+      <div className={css.contenido}>
+        <header>
+          <div className={css.logo}>
+            <img src="/assets/img/logo_transparente.png" alt="logotipo" />
+          </div>
+        </header>
+       <FormLogin/>
         
+      </div>
+      <Footer/>
     </div>
-  )
-}
+  );
+};
+
+export default login;

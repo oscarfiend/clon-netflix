@@ -1,0 +1,75 @@
+$negro: #141414;
+$gris: #323232;
+$gris2:#8c8c8c;
+$girs3:#454545;
+$blanco:#FFFFFF;
+$primario:#e50914;
+$secundaio:#E87c03;
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0px 45px;
+    //background-color: rgba($color: $negro, $alpha: 0.02);
+    background-image: linear-gradient($negro, transparent);
+    position: fixed;
+    width: 100%;
+    top:0;
+    height: 3rem;
+    font-size: 0.6rem;
+    transition: background-color 0.5s ease;
+    z-index: 10;
+}
+
+.active{
+    background-color: $negro;
+    transition: background-color 0.3s ease;
+}
+
+@media screen and(min-width:880px){
+    .navbar{
+        height: 4rem;
+        font-size: 0.9rem;
+    }
+}
+
+.navbar>div{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar img{
+    height: 100%;
+    width: auto;
+}
+
+.navbar a{
+    color: $blanco;
+    padding: 0px 10px;
+
+    &:hover{
+        color:#e5e5e5;
+        text-decoration: none;
+    }
+
+    &:active{
+        cursor: none;
+    }
+}
+
+.userLogo{
+    padding: 2px;
+    border-radius:5px;
+}
+
+@media screen and(min-width:880px){
+    .userLogo{
+        padding: 15px;
+        border-radius: 20px;
+    }
+}

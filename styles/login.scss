@@ -7,13 +7,60 @@ $primario:#e50914;
 $secundaio:#E87c03;
 
 
-.contenedor{
-    background-color: #141414;
-    min-width: 100%;
-    min-height: 100%;
-   
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: rgba(0,0,0,.75);
+    color: $gris2;
+    padding:0 100px;
+    border-top: 1px solid $gris2;
 }
 
+footer p{
+    margin: 20px 0;
+    
+}
+
+footer nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer nav a{
+    flex:0 0 50%;
+    padding:10px 0;
+
+}
+
+@media screen and (min-width:480px){
+    footer nav a{
+    flex: 0 0 33%;
+    }
+}
+
+@media screen and (min-width:768px){
+    footer nav a{
+    flex: 0 0 25%;
+    }
+
+    footer{
+        border:none;
+    }
+}
+
+select{
+    display: inline-block;
+    max-width: 120px;
+    margin: 10px 0 50px 0;
+    padding:15px;
+    background-color: transparent;
+    border: 1.5px solid $gris2;
+    color: $gris2;
+    border-radius: 3px;
+    font-size: 18px;
+}
 
 @media screen and(min-width:768px){
     .contenedor{
@@ -26,6 +73,13 @@ $secundaio:#E87c03;
         background-size: cover;
         background-position: bottom center; 
     }
+}
+
+.contenedor{
+    background-color: #141414;
+    min-width: 100%;
+    min-height: 100%;
+   
 }
 
 .contenido{
@@ -94,6 +148,10 @@ $secundaio:#E87c03;
     margin-top: 35px;
 }
 
+.campo .submit:hover{
+    cursor: pointer;
+}
+
 .acciones{
     display: flex;
     justify-content: space-between;
@@ -134,57 +192,4 @@ $secundaio:#E87c03;
 .subscribe span{
     color:$gris2;
     margin-right: 5px;
-}
-
-footer{
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    background-color: rgba(0,0,0,.75);
-    color: $gris2;
-    padding:0 100px;
-    border-top: 1px solid $gris2;
-}
-
-footer p{
-    margin: 20px 0;
-    
-}
-
-footer nav{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-footer nav a{
-    flex:0 0 50%;
-    padding:10px 0;
-
-}
-
-@media screen and (min-width:480px){
-    footer nav a{
-    flex: 0 0 33%;
-    }
-}
-
-@media screen and (min-width:768px){
-    footer nav a{
-    flex: 0 0 25%;
-    }
-
-    footer{
-        border:none;
-    }
-}
-
-select{
-    display: inline-block;
-    max-width: 120px;
-    margin: 10px 0 50px 0;
-    padding:15px;
-    background-color: transparent;
-    border: 1.5px solid $gris2;
-    color: $gris2;
-    border-radius: 3px;
 }
