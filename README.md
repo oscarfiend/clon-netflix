@@ -3,6 +3,9 @@
 ## Pantalla de logueo
 ![image info](/public/assets/img/login_screen.jpg)
 
+## Pantalla Principal (Home)
+![image info](/public/assets/img/home_screen.jpg)
+
 ## tareas
 - [x] Construir vista de logueo
 - [x] Push a github
